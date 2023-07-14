@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/styles.css" />
+</head>
+
+<body>
+    <div class=" bg-blue-200 min-h-screen flex items-center justify-center overflow-hidden">
+
+        <div class=" bg-white my-4 w-5/6 p-8 rounded-lg shadow-xl">
+            <!-- Navigation -->
+            <div class="nav pb-6">
+                <ul class="flex gap-4 flex-col text-center text-xl font-bold md:flex md:flex-row md:justify-end">
+                    <li><a class="link-hover--bottom py-1" href="#">Vector</a></li>
+                    <li><a class="link-hover--bottom py-1" href="#">Illustration</a></li>
+                    <li><a class="link-hover--bottom py-1" href="#">Images</a></li>
+                    <li><a class="link-hover--bottom py-1" href="#">Icons</a></li>
+                </ul>
+            </div>
+            <!-- Search -->
+            <div class="block md:flex md:items-center md:justify-between mt-6">
+                <div class="relative">
+                    <input type="text " placeholder="Search"
+                        class="border border-slate-300  w-full py-2 pl-3 rounded focus:outline-none">
+                    <i class="fas fa-search absolute right-0 p-3 text-center" style="color: #596e91;"></i>
+                </div>
+                <button
+                    class="py-2 px-8 bg-black border border-black text-white text-base w-full my-3 rounded hover:bg-white hover:text-black hover:border-black hover:border md:w-auto">Upload</button>
+            </div>
+            <!-- Gallery -->
+            <div class="gallery mt-7 pb-7 grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+
+                <div class="relative group/item">
+                    <img src="images/image1.jpg" alt="Image gallery">
+                    <div
+                        class="text-base text-white absolute bottom-0 p-2 bg-opacity-40 bg-slate-300 w-full invisible  group-hover/item:visible group-hover/item:opacity-60 group-hover/item:duration-300  flex justify-between items-center ">
+                        <div>
+                            <p>Tri Thuc</p>
+                            <p>26 likes - 08 shares</p>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-bookmark text-xl"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="relative group/item">
+                    <img src="images/image2.jpg" alt="Image gallery">
+                    <div
+                        class="text-base text-white absolute bottom-0 p-4 bg-opacity-40 bg-slate-300 w-full invisible  group-hover/item:visible group-hover/item:opacity-60 group-hover/item:duration-300  flex justify-between items-center ">
+                        <div>
+                            <p>Tri Thuc</p>
+                            <p>26 likes - 08 shares</p>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-bookmark text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="relative group/item">
+                    <img src="images/image3.jpg" alt="Image gallery">
+                    <div
+                        class="text-base text-white absolute bottom-0 p-4 bg-opacity-40 bg-slate-300 w-full invisible  group-hover/item:visible group-hover/item:opacity-60 group-hover/item:duration-300  flex justify-between items-center ">
+                        <div>
+                            <p>Tri Thuc</p>
+                            <p>26 likes - 08 shares</p>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-bookmark text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="relative group/item">
+                    <img src="images/image4.jpg" alt="Image gallery">
+                    <div
+                        class="text-base text-white absolute bottom-0 p-4 bg-opacity-40 bg-slate-300 w-full invisible  group-hover/item:visible group-hover/item:opacity-60 group-hover/item:duration-300  flex justify-between items-center ">
+                        <div>
+                            <p>Tri Thuc</p>
+                            <p>26 likes - 08 shares</p>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-bookmark text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="relative group/item">
+                    <img src="images/image5.jpg" alt="Image gallery">
+                    <div
+                        class="text-base text-white absolute bottom-0 p-4 bg-opacity-40 bg-slate-300 w-full invisible  group-hover/item:visible group-hover/item:opacity-60 group-hover/item:duration-300  flex justify-between items-center ">
+                        <div>
+                            <p>Tri Thuc</p>
+                            <p>26 likes - 08 shares</p>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-bookmark text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div class="relative group/item">
+                    <img src="images/image6.jpg" alt="Image gallery">
+                    <div
+                        class="text-base text-white absolute bottom-0 p-4 bg-opacity-40 bg-slate-300 w-full invisible  group-hover/item:visible group-hover/item:opacity-60 group-hover/item:duration-300  flex justify-between items-center ">
+                        <div>
+                            <p>Tri Thuc</p>
+                            <p>26 likes - 08 shares</p>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-bookmark text-xl"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
