@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card--hover {
+    @apply hover:border-violet-600 hover:bg-violet-600;
+}
+
+.card-container  {
+    @apply border-[12px] border-slate-600 rounded-lg  text-white bg-slate-600;
+}
+
+.card-heading {
+    @apply p-6 border-b-slate-500 border-b text-center ;
+}
+
+.card-content {
+    @apply p-6 text-sm whitespace-pre-line text-center;
+}
+
+.pricing-btn {
+    @apply py-2 px-6 border rounded;
+}
+
+.pricing-btn--base {
+    @apply bg-slate-800;
+}
+
+.pricing-btn-hover--violet {
+    @apply hover:bg-violet-600 border-violet-600;
+ }
+
+ @layer keyframes {
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0.2;
+      }
+    }
+  }
+  
+  @layer utilities {
+    .animate-fade-out {
+      animation: fadeOut 1.5s ease-in-out infinite;
+    }
+  }
+
+  /* Product modal */
+.product-card {
+    @apply w-[450px] h-auto border rounded-lg shadow-lg p-4 md:grid md:grid-cols-2 md:w-[700px] md:p-8;
+}
+
+.product-image-container {
+    @apply w-3/4 mx-auto mb-4 row-span-2;
+}
+
+.product-image {
+    @apply w-full object-cover transform transition-transform duration-300 hover:scale-110;
+}
+
+.badge {
+    @apply p-2 bg-black text-white rounded-full text-xs mx-auto;
+}
+
+.product-title {
+    @apply text-2xl font-bold mt-2;
+}
+
+.product-price-old {
+    @apply text-base line-through mt-2 mb-2;
+}
+
+.product-price {
+    @apply text-3xl font-bold mt-2 mb-2;
+}
+
+.offer-message {
+    @apply text-sm float-left mb-2 text-slate-400;
+}
+
+.add-to-cart-button {
+    @apply w-full py-3 bg-blue-500 rounded-lg text-white text-base mb-1 border-b-4 border-blue-700 hover:translate-y-0.5 hover:border-blue-500;
+}
+
+.stock-message {
+    @apply py-2;
+}
+
+.stock-icon {
+    @apply before:content-[''] before:inline-block before:rounded-full before:w-3 before:h-3 before:bg-green-500 before:animate-fade-out before:hover:scale-150 before:hover:duration-700 before:hover:bg-transparent;
+}
+
+.action-button {
+    @apply w-full py-3 rounded-lg text-center text-sm border-4 mb-3 hover:shadow-lg hover:-translate-y-0.5;
+}
+
+  
